@@ -1,0 +1,368 @@
+/*-------- COMMON PART--------*/
+
+body {
+  background-color: lightgray;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+.btn {
+  padding: 10px 40px;
+  font-size: 1em;
+  background-color: rgb(224, 44, 109);
+  color: white;
+}
+.btn:hover {
+  background-color: lime;
+  color: black;
+  border-radius: 5px;
+  font-size: large;
+}
+
+/*-------BANNER CONTAINER PART--------  */
+
+.banner-container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(45, 37, 160);
+}
+.container-one {
+  width: 400px;
+  height: 680px;
+  margin-left: 156px;
+  color: white;
+}
+
+.container-one > h1 {
+  font-size: 4em;
+}
+.container-two {
+  width: 557px;
+  height: 438;
+  margin-left: 102px;
+}
+.banner-container img {
+  width: 557px;
+  height: 438px;
+}
+
+.banner-container img:hover {
+  transform: scale(1.3) rotate(10deg);
+  transition: transform 1s ease-in-out;
+}
+/* ----------PLAYER INFORMATION--- */
+
+.player-section {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 70px;
+}
+.players-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  grid-row-gap: 30px;
+  grid-gap: 30px;
+}
+.player-detail {
+  align-items: center;
+  width: 320px;
+  height: 474px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 5px;
+}
+.player-detail > img {
+  width: 100%;
+  height: 276px;
+  border-radius: 5px;
+}
+
+/*------- MATCH SECTION-------  */
+.match-container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+}
+.match-container-one {
+  width: 485px;
+  height: 380px;
+  margin-left: 156px;
+}
+
+.match-container-one > h1 {
+  font-size: 3em;
+}
+.match-container-two {
+  width: 557px;
+  height: 438;
+  margin-left: 102px;
+}
+.match-container img {
+  width: 557px;
+  height: 438px;
+}
+
+/*------- ARTICLE SECTION-----------  */
+.all-article {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+section > h1 {
+  font-size: 3em;
+  text-align: center;
+  color: blue;
+}
+.article-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 5px;
+  grid-column-gap: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.article-img {
+  width: 250px;
+  height: 300px;
+  border-radius: 20px;
+}
+.article-hover {
+  margin-top: 100px;
+  margin-left: 50px;
+  width: 300px;
+  height: 800px;
+}
+.article-hover:hover {
+  transform: scale(1.3);
+  transition: transform 1s ease-in-out;
+}
+/* ---------LOGO AND SOCIAL MEDIA PART---------  */
+.logo-social-container {
+  display: grid;
+  grid-template-columns: 1;
+  place-items: center;
+  grid-row-gap: 20px;
+}
+.logo-container-img {
+  width: 483px;
+  height: 110px;
+  margin-top: 120px;
+}
+
+.social-container {
+  font-size: 2em;
+}
+.social-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.logos {
+  padding: 10px;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 20%;
+  color: gray;
+}
+
+/*------ FOOTER SECTION--------*/
+.footer-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* ------------MEDIA QUERY AND DEVICES RESPONSIVE PART------------- */
+@media only screen and (max-width: 688px) {
+  /*-------BANNER CONTAINER PART--------  */
+  body {
+    overflow-x: hidden;
+  }
+  .banner-container {
+    background-color: rgb(45, 37, 160);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-one {
+    width: 200px;
+    height: auto;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  .container-one > h1 {
+    font-size: 2em;
+  }
+  .container-two {
+    width: 200px;
+    height: 0px;
+    margin-bottom: 150px;
+    margin-left: 0px;
+  }
+  .banner-container img {
+    width: 350px;
+    height: 320px;
+  }
+
+  /* ----------PLAYER INFORMATION--- */
+  .player-section {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 70px;
+  }
+  .players-list {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    grid-row-gap: 20px;
+  }
+
+  /*------- MATCH SECTION-------  */
+  .match-container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .match-container-one {
+    width: 200px;
+    height: 1200px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+  }
+  .match-container img {
+    margin-left: 50px;
+    width: 400px;
+    height: 400px;
+  }
+  /*------- ARTICLE SECTION-----------  */
+  .article-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 5px;
+    grid-column-gap: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  section > h1 {
+    margin-top: 750px;
+    font-size: 3em;
+    text-align: center;
+    color: blue;
+  }
+  .all-article {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  /* ---------LOGO AND SOCIAL MEDIA PART---------  */
+  .logo-container-img {
+    width: 300px;
+    height: 110px;
+    margin-top: 120px;
+  }
+  .social-container {
+    font-size: 1em;
+  }
+}
+/* ------------MEDIA QUERY AND DEVICES RESPONSIVE PART (FOR TABLET)------------- */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  /*-------BANNER CONTAINER PART--------  */
+
+  .banner-container {
+    background-color: rgb(45, 37, 160);
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-one {
+    width: 300px;
+    height: auto;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  .container-one > h1 {
+    font-size: 2em;
+  }
+  .container-two {
+    width: 300px;
+    height: 0px;
+    margin-bottom: 150px;
+    margin-left: 0px;
+  }
+  .banner-container img {
+    width: 450px;
+    height: 320px;
+  }
+  /* ----------PLAYER INFORMATION--- */
+  .player-section {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 70px;
+  }
+  .players-list {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    grid-row-gap: 30px;
+  }
+
+  /*------- MATCH SECTION-------  */
+  .match-container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .match-container-one {
+    width: 200px;
+    height: 1200px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+  }
+  .match-container img {
+    margin-left: 50px;
+    width: 400px;
+    height: 400px;
+  }
+  /*------- ARTICLE SECTION-----------  */
+  .article-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 5px;
+    grid-column-gap: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  section > h1 {
+    margin-top: 750px;
+    font-size: 3em;
+    text-align: center;
+    color: blue;
+  }
+  .all-article {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  /* ---------LOGO AND SOCIAL MEDIA PART---------  */
+  .logo-container-img {
+    width: 300px;
+    height: 110px;
+    margin-top: 120px;
+  }
+  .social-container {
+    font-size: 1em;
+  }
+}
